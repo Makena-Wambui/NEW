@@ -1,6 +1,8 @@
 message = '{0} is easier than {1}'.format('Python', 'Java')
 message1 = '{1} is easier than {0}'.format('Python', 'Java')
 message2 = '{0:5.2f} and {1:d}'.format(1.23456789, 11)
+message4 = '{}'.format(1.234567)
 print(message)
 print(message1)
 print(message2)
+print(message4)
