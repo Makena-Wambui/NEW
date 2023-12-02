@@ -18,3 +18,8 @@ def fib2(n):
         list.append(a)
         a, b = b, a + b
     return list
+
+
+if __name__ == "__main__":
+    import sys
+    fib(int(sys.argv[1]))
