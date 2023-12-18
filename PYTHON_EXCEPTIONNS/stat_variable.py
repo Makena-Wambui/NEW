@@ -25,6 +25,7 @@ def main():
     Bones = Dog("Bones")
     Buster = Dog("Buster")
     Bones.GetNumberOfDogObjects()
+    Buster.GetNumberOfDogObjects()
 
 
 main()
