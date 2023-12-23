@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 class Square:
-    def __init__(self, height=0, width=0):
+    def __init__(self, height="0", width="0"):
         self.height = height
         self.width = width
 
     # let us define a getter method.
+    # @property allows us to refer to each of the individual attributes.
     @property
     def height(self):
         print("Retrieving Height attribute..")
@@ -13,8 +14,8 @@ class Square:
     # let us now define our setter method
     @height.setter
     def height(self, value):
-        if str(value).isdigit():
-            self.__height = int(value)
+        if value.isdigit():
+            self.__height = value
         else:
             print("Please enter a valid value.")
 
@@ -25,8 +26,8 @@ class Square:
 
     @width.setter
     def width(self, value):
-        if str(value).isdigit():
-            self.__width = int(value)
+        if value.isdigit():
+            self.__width = value
         else:
             print("Enter a valid value.")
 
