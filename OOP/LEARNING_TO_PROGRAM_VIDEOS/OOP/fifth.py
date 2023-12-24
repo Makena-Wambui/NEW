@@ -15,6 +15,7 @@ class Coordinate:
         return distance
     # let us define another magic method __str__
     # so we dont get the weird uninformative value when we try to print an object.
+
     def __str__(self):
         return "Coordinate (" + str(self.x) + ", " + str(self.y) + ")"
 
@@ -26,6 +27,8 @@ def main():
     print(coord_1.x)
     print(coord_2.y)
     print(coord_1.distance(coord_2))
+    # use isinstance to check whether object is an instance of a class.
+    print(isinstance(coord_2, Coordinate))
 
 
 main()
